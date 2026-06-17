@@ -1,0 +1,66 @@
+---
+title: baizhai title
+description: baizhai description
+locale: zh
+email: "baizhai@email.com"
+url: "https://baizhai.im"
+social:
+  github: "baizhai"
+
+# Theme Settings
+logo: /img/logo.svg
+theme: 'jekyll-theme-persephone'
+img_prefix: https://baizhai.oss-cn-hongkong.aliyuncs.com
+theme_setting:
+  blog_page: "blog/index.md"
+  about_page: "about.md"
+  archive_page: "archive.md"
+  nav_pages:
+    -
+      title: "摆寨作品集"
+      url: "https://baizhai.nav"
+  lang:
+    category_all: "全部"
+    blog_title: "博客"
+    comment:
+      user: "昵称"
+      email: "邮箱"
+      url: "链接"
+      message: "说点什么吧..."
+      reply: "回复"
+
+# Jekyll Settings
+markdown: kramdown
+permalink: /blog/:title:output_ext
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      keywords: page keywords
+      description: page description
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-books
+  - jekyll-img-prefix
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - scripts/
