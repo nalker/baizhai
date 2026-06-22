@@ -25,16 +25,16 @@ module.exports = {
       ]
     }]
   },
-  optimization: {
-    minimizer: [
-      '...', // 保留 webpack 5 默认的 JS 压缩器
-      new CssMinimizerPlugin()
-    ]
-  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
     })
-  ]
+  ],
+  optimization: {
+    minimizer: [
+      '...',
+      new CssMinimizerPlugin()
+    ]
+  }
 };
