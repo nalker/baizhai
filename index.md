@@ -1,3 +1,3 @@
 ---
-layout: "slides"
+layout: "default"
 ---
