@@ -3,3 +3,12 @@ title: Baizhai Portfolio
 description: baizhai description
 locale: zh-CN
 email: "baizhai@email.com"
+
+theme_setting:
+  nav_pages:
+    -
+      title: "Baizhai"
+      url: "https://baizhai.im"
+  lang:
+    category_all: "全部"
+
